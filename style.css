@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    background-color: rgb(58, 61, 61);
+    color: white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+h1 {
+    border: solid 4px rgb(172, 166, 51);
+    border-radius: 6px;
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: rgb(172, 166, 51);
+    background-color: rgb(50, 50, 50);
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid rgb(237, 249, 67);
+    border-radius: 10px;
+    background-color: rgb(48, 148, 195);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(210, 223, 34);
+    color: black;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: rgb(34, 139, 34);
+    color: white;
+    transform: scale(1);
+}
+
+/* Navigation Bar */
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 8px;
+    background: rgb(100, 100, 100);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(172, 166, 51);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]:hover {
+    background: rgb(150, 150, 150);
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: rgb(210, 223, 34);
+}
+
+/* Flex Container for Bars */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 500px;
+    margin-top: 20px;
+    gap: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Individual Bars */
+.flex-item {
+    background: linear-gradient(45deg, cyan, royalblue);
+    border-radius: 5px;
+    width: 10px;
+    transition: height 0.1s ease, transform 0.2s ease;
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, royalblue, cyan);
+}
+
+/* Sorting Active States */
+.flex-item.active {
+    background: orange;
+    transition: background 0.1s ease;
+}
+
+.flex-item.sorted {
+    background: limegreen;
+    transition: background 0.1s ease;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(8, 4, 5);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: red;
+    background-color: lightgray;
+}
